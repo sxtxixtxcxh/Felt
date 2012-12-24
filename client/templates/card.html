@@ -1,0 +1,20 @@
+<template name="cards">
+  <div id="card-list">
+    {{#each cards}}
+      {{> card}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="card">
+  <div class="card">
+    <header>
+      <h1>{{name}}</h1>
+    </header>
+    <div class="card-description">
+{{#markdown}}
+{{description}}
+{{/markdown}}
+    </div>
+  </div>
+</template>
